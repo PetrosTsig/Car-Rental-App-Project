@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListCarController">
+   <children>
+      <Label fx:id="Title" layoutX="257.0" layoutY="55.0" text="List a Car">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="287.0" layoutY="95.0" text="Brand">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="155.0" text="Model">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="264.0" layoutY="206.0" prefHeight="20.0" prefWidth="84.0" text="Licence plate" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="289.0" layoutY="265.0" text="Color" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="brand" layoutX="227.0" layoutY="119.0" />
+      <TextField fx:id="model" layoutX="226.0" layoutY="175.0" />
+      <TextField fx:id="plate" layoutX="226.0" layoutY="233.0" />
+      <TextField fx:id="color" layoutX="227.0" layoutY="293.0" />
+      <Button layoutX="264.0" layoutY="333.0" mnemonicParsing="false" onAction="#ListCar" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: black;" text="List" textFill="WHITE" />
+      <MenuBar prefHeight="59.0" prefWidth="600.0" style="-fx-background-color: darkred;">
+         <menus>
+            <Menu mnemonicParsing="false">
+               <graphic>
+                  <Button mnemonicParsing="false" onAction="#SwitchToMain" prefHeight="45.0" prefWidth="135.0" style="-fx-background-color: darkred;" text="Home" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#SwitchToCarList">
+               <graphic>
+                  <Button mnemonicParsing="false" onAction="#SwitchToCarList" prefHeight="45.0" prefWidth="136.0" style="-fx-background-color: darkred;" text="Cars" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false">
+               <graphic>
+                  <Button mnemonicParsing="false" onAction="#SwitchToResList" prefHeight="45.0" prefWidth="137.0" style="-fx-background-color: darkred;" text="Reservation" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false">
+               <graphic>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#SwitchToCustCat" prefHeight="45.0" prefWidth="136.0" style="-fx-background-color: darkred;" text="Customer Catallog" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+               </graphic>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
